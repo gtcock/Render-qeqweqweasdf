@@ -1,1 +1,1 @@
-FROM ghcr.io/eooce/python:latest
+FROM ghcr.io/eooce/nodejs:main
