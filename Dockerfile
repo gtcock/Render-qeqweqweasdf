@@ -1,1 +1,1 @@
-FROM ghcr.io/eooce/nodejs:main
+FROM gtian5418/gtian:node
