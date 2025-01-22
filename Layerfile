@@ -5,7 +5,7 @@ SECRET ENV COCKCOCKNK
 SECRET ENV COCKCOCKAD
 SECRET ENV COCKCOCKAA
 SECRET ENV COCKCOCKNA
-
+SECRET ENV COCKCOCKPT
 # To note: Layerfiles create entire VMs, *not* containers!
 
 # install the latest version of Docker, as in the official Docker installation tutorial.
@@ -27,6 +27,7 @@ RUN docker build \
     --build-arg COCKCOCKAD=$COCKCOCKAD \
     --build-arg COCKCOCKAA=$COCKCOCKAA \
     --build-arg COCKCOCKNA=$COCKCOCKNA \
+    --build-arg COCKCOCKNA=$COCKCOCKPT \
     -t image .
 
 # 运行时传入环境变量
@@ -35,5 +36,6 @@ RUN docker run -d \
     -e COCKCOCKAD=$COCKCOCKAD \
     -e COCKCOCKAA=$COCKCOCKAA \
     -e COCKCOCKNA=$COCKCOCKNA \
+    -e COCKCOCKNA=$COCKCOCKPT \
     -p 3000:3000 image
 EXPOSE WEBSITE http://localhost:3000
