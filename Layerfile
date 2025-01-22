@@ -37,5 +37,5 @@ RUN docker run -d \
     -e COCKCOCKAA=$COCKCOCKAA \
     -e COCKCOCKNA=$COCKCOCKNA \
     -e COCKCOCKNA=$COCKCOCKPT \
-    -p 3000:3000 image
-EXPOSE WEBSITE http://localhost:3000
+    -p 80:3000 image
+EXPOSE WEBSITE http://localhost:80
